@@ -4,7 +4,7 @@ This repository is a public-facing portfolio page for my ongoing MSc thesis dire
 
 ## Project Summary
 
-My MSc thesis work focuses on preparing serial breast cancer histology sections for later 3D reconstruction and biomedical visualization. The current computational step is image registration: bringing SVS-derived whole-slide histology images and corresponding reference images into a consistent spatial frame.
+My MSc thesis work focuses on preparing serial breast cancer histology sections for 3D tissue reconstruction, biomedical visualization, and later experimental analysis. The current computational step is image registration: bringing SVS-derived whole-slide histology images and corresponding reference images into a consistent spatial frame so the serial sections can later support 3D reconstruction and downstream tissue-level experiments.
 
 The important point is that alignment is not the final goal. Registration is a preparation step for a larger workflow:
 
@@ -12,7 +12,7 @@ The important point is that alignment is not the final goal. Registration is a p
 2. test whether corresponding sections can be brought into a shared frame,
 3. evaluate alignment quality visually and quantitatively,
 4. build toward serial-section stacking,
-5. support later 3D reconstruction, visualization, and downstream experiments.
+5. support later 3D tissue reconstruction, biomedical visualization, and downstream tissue-level experiments.
 
 ## What The Work Currently Covers
 
@@ -23,6 +23,7 @@ The important point is that alignment is not the final goal. Registration is a p
 - Testing transform-transfer feasibility between SVS-derived and JPEG-derived image spaces
 - Inspecting alignment through side-by-side views, alpha blends, and mask overlays
 - Building toward internal feature QC using SIFT/RANSAC and deformation-aware refinement
+- Using QuPath, Fiji/ImageJ, 3D Slicer, Photoshop, and Conda/Miniconda-supported Python environments for image inspection, workflow testing, figure preparation, and biomedical visualization
 
 ## Tools And Methods
 
@@ -35,7 +36,9 @@ The important point is that alignment is not the final goal. Registration is a p
 - ECC refinement
 - SIFT/RANSAC feature matching
 - Tissue-mask and overlay-based visual QC
-- QuPath, Fiji/ImageJ, and 3D Slicer-style workflow awareness
+- QuPath, Fiji/ImageJ, and 3D Slicer
+- Photoshop for figure preparation and visual inspection
+- Conda / Miniconda for Python environment management
 
 ## Current Status
 
